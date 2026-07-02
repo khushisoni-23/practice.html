@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Improved Flexbox</title>
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      background: linear-gradient(to right, #f9f9f9, #e3f2fd);
+      font-family: Arial, sans-serif;
+    }
+
+    h2 {
+      color: #0d47a1;
+      margin-bottom: 10px;
+    }
+
+    .horizontal-box, .vertical-box {
+      border: 3px solid #1976d2;
+      border-radius: 10px;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .horizontal-box {
+      display: flex;
+      flex-direction: row;
+      gap: 20px;
+      width: 80%;
+      justify-content: center;
+    }
+
+    .vertical-box {
+      display: flex;
+      flex-direction: column-reverse;
+      gap: 20px;
+      height: 300px;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .item {
+      background-color: #90caf9;
+      padding: 20px;
+      text-align: center;
+      border-radius: 8px;
+      font-weight: bold;
+      color: #0d47a1;
+      transition: transform 0.3s ease, background-color 0.3s ease;
+    }
+
+    .item:hover {
+      transform: scale(1.1);
+      background-color: #64b5f6;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h2>Horizontal Flexbox</h2>
+  <div class="horizontal-box">
+    <div class="item">Box 1</div>
+    <div class="item">Box 2</div>
+    <div class="item">Box 3</div>
+  </div>
+
+  <h2>Vertical Flexbox (Reversed)</h2>
+  <div class="vertical-box">
+    <div class="item">Box A</div>
+    <div class="item">Box B</div>
+    <div class="item">Box C</div>
+  </div>
+</body>
+</html>
