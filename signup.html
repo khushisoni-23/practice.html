@@ -1,27 +1,130 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        *{
-            margin: 2px;
-            padding: 1px0;
+     
+     *{
             box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            
         }
+
+        body {
+            background-color: #1a1a1a;
+            color: white;
+        }
+
         .container{
-            height: 100vh;
+            background-color: rgba(101, 79, 101, 0.874);
+            border-radius: 20px;
             display: flex;
             justify-content: center;
             align-items: center;
+            gap: 20px;
+            width: 900px;
+            height: 600px;
+            margin: 50px auto;
         }
-       
+
+        .container h4{
+            color:darkgray;
+            text-decoration: underline;
+        }
+
+        .container img {
+            border-radius: 20px;
+            width: 50%;
+        }
+
+        .container form {
+            width: 45%;
+        }
+
+        form h2 {
+            margin-bottom: 10px;
+            }
+
+        form h4 {
+            color: darkgray;
+            margin-bottom: 30px;
+            font-weight: normal;
+        }
+
+        input[type="text"]  {
+            padding: 15px;
+            margin: 8px;
+            border: none;
+            border-radius: 8px;
+            background-color: #4a2f4a;
+        }
+
+        input[type="email"], input[type="password"]{
+            padding: 15px;
+            margin: 8px;
+            border: none;
+            border-radius: 8px;
+            background-color: #4a2f4a;
+            width: 90%;
+        }
+
+        input[type="checkbox"] {
+            margin-top: 15px;
+            margin-left: 8px;
+        }
+
+        a {
+            color: plum;
+            text-decoration: underline;
+        }
+
+        button[type="submit"] {
+            padding: 13px;
+            margin: 10px;
+            border: none;
+            border-radius: 6px;
+            background-color: plum;
+            transition: background-color 0.3s;
+            width: 90%;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color:rgb(106, 65, 106);
+        }
+
+        button[type="btn-google"], button[type="btn-apple"] {
+            padding: 13px;
+            margin: 10px;
+            border: none;
+            border-radius: 6px;
+            background-color: plum;
+            transition: background-color 0.3s;
+            width: 42%;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color:rgb(106, 65, 106);
+        }
+
+        p {
+           text-align: center;
+           margin: 15px;
+        }
+      
+      
+    
     </style>
 </head>
-<body>
+<body >
     <div class="container">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTC4DvpIn8W5He03chkdYpL8vm84YI0hGOk6LfnYp6CFNfmd0yOpFCJHYw&s=10" alt="" width="180">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTC4DvpIn8W5He03chkdYpL8vm84YI0hGOk6LfnYp6CFNfmd0yOpFCJHYw&s=10" alt="" width="180"height="180">
         <div class="model">
             <div class="model content"></div>
             <h2>Create an Account</h2>
@@ -50,5 +153,157 @@
             </form>
         </div>
         
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create Account</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #000; /* Black background */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .container {
+      background:grey;
+      display: flex;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+      width: 900px;
+      max-width: 95%;
+    }
+
+    /* Left side image */
+    .left {
+      flex: 1;
+      background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTC4DvpIn8W5He03chkdYpL8vm84YI0hGOk6LfnYp6CFNfmd0yOpFCJHYw&s=10") no-repeat center/cover;
+    }
+
+    /* Right side form */
+    .right {
+      flex: 1;
+      padding: 40px;
+    }
+
+    h2 {
+      margin-bottom: 10px;
+      color: #333;
+    }
+
+    p {
+      margin-bottom: 20px;
+      font-size: 14px;
+      color: #666;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .grid {
+      display: flex;
+      gap: 5px;
+      margin-bottom: 15px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"] {
+      flex: 1;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 14px;
+      margin-bottom: 15px;
+    }
+
+    .flex {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+      font-size: 14px;
+      color:#eee
+    }
+
+    .flex input {
+      margin-right: 8px;
+    }
+
+    .btn {
+      background: #6c63ff;
+      color: #fff;
+      border: none;
+      padding: 12px;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .btn:hover {
+      background: #574bdb;
+    }
+
+    .social {
+      margin-top: 20px;
+      display: flex;
+      gap: 10px;
+    }
+
+    .social button {
+      flex: 1;
+      background: #eee;
+      color: #333;
+      border: 1px solid #ccc;
+      padding: 10px;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    .social button:hover {
+      background: #ddd;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="left"></div>
+    <div class="right">
+      <h2 style="color:white;">Create an Account</h2>
+      <form>
+        <div class="grid">
+          <input type="text" placeholder="First Name" required>
+          <input type="text" placeholder="Last Name" required>
+        </div>
+        <input type="email" placeholder="Email" required>
+        <input type="password" placeholder="Enter Your Password" required>
+        <div class="flex">
+          <input type="checkbox" id="terms" required>
+          <label for="terms">I agree to the Terms & Conditions</label>
+        </div>
+        <button type="submit" class="btn">Create Account</button>
+        <p style="margin-top:15px; color: white; text-align: center;">Or register with</p>
+        <div class="social">
+          <button class="google">Google</button>
+          <button class="apple">Apple</button>
+        </div>
+      </form>
+    </div>
+  </div>
 </body>
 </html>
